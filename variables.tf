@@ -30,6 +30,10 @@ variable "mime_types" {
     json  = "application/json"
     csv   = "text/csv"
     sql   = "application/sql"
+    gif   = "image/gif"
+    jpg   = "image/jpeg"
+    jpeg  = "image/jpeg"
+    png   = "image/png"
   }
 }
 
