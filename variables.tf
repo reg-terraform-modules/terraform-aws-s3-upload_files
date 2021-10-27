@@ -34,6 +34,7 @@ variable "mime_types" {
     jpg   = "image/jpeg"
     jpeg  = "image/jpeg"
     png   = "image/png"
+    py    = "text/x-python"
   }
 }
 
