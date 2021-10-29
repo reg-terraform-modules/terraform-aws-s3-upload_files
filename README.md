@@ -22,7 +22,7 @@ Upload files to s3 buckets.
     - local directory where files are located  
 
 ### Optional (default values used unless specified)
-- `target_key`
+- `bucket_key`
     - s3 target folder where all files will be copied from upload_directory
     - if by default "" - all files will be copied directly to bucket 
 - `tags`
