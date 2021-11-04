@@ -5,4 +5,5 @@ resource "aws_s3_bucket_object" "this" {
   source        = "${var.upload_directory}${each.value}"
   acl           = var.bucket_acl
   content_type  = lookup(var.mime_types, split(".", each.value)[length(split(".", each.value)) - 1])
+  etag          = filemd5("${var.upload_directory}${each.value}")
 }
