@@ -25,6 +25,7 @@ variable "bucket_acl" {
 variable "mime_types" {
   default = {
     html  = "text/html"
+    txt   = "text/plain"
     css   = "text/css"
     js    = "application/javascript"
     json  = "application/json"
@@ -32,6 +33,7 @@ variable "mime_types" {
     sql   = "application/sql"
     gif   = "image/gif"
     jpg   = "image/jpeg"
+    JPG   = "image/jpeg"
     jpeg  = "image/jpeg"
     png   = "image/png"
   }
