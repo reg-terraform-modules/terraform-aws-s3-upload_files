@@ -36,6 +36,8 @@ variable "mime_types" {
     JPG   = "image/jpeg"
     jpeg  = "image/jpeg"
     png   = "image/png"
+    yml   = "binary/octet-stream"
+    yaml  = "binary/octet-stream"
   }
 }
 
