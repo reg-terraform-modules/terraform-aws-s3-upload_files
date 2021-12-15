@@ -22,6 +22,12 @@ variable "bucket_acl" {
   default     = "private"
 }
 
+variable "file_name" {
+  description = "Optional file name if a specific file in folder shall be uploaded. Defaults to all files in upload_directory."
+  type        = string
+  default     = "**/*.*"
+}
+
 variable "mime_types" {
   default = {
     html  = "text/html"
