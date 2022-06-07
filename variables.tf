@@ -34,6 +34,7 @@ variable "mime_types" {
     txt   = "text/plain"
     css   = "text/css"
     js    = "application/javascript"
+    map   = "application/json"
     json  = "application/json"
     csv   = "text/csv"
     sql   = "application/sql"
@@ -44,6 +45,8 @@ variable "mime_types" {
     png   = "image/png"
     yml   = "binary/octet-stream"
     yaml  = "binary/octet-stream"
+    ico   = "image/vnd.microsoft.icon"
+    woff  = "font/woff"
   }
 }
 
