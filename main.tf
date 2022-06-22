@@ -1,4 +1,4 @@
-resource "aws_s3_bucket_object" "this" {
+resource "aws_s3_object" "this" {
   for_each      = fileset(var.upload_directory, var.file_name)
   bucket        = var.bucket_name
   key           = replace("${var.bucket_key}${each.value}", var.upload_directory, "")

@@ -11,7 +11,7 @@ Upload files to s3 buckets.
 ### Data sources
 
 ### Resources
-- `aws_s3_bucket_object`
+- `aws_s3_object`
     - loads data in the bucket
 
 ## Input variables
