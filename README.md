@@ -41,6 +41,15 @@ Upload files to s3 buckets.
 ## Example use
 The below example generates a bucket using default input where available.
 ```sql
+module "s3_dim_station_name_upload" {
+  source  = "app.terraform.io/renovasjonsetaten/s3-upload_files/aws"
+  version = "0.1.1"
+  bucket_name         = module.s3_dim_station_name_folder.name
+  bucket_key          = module.s3_dim_station_name_folder.key
+  bucket_acl          = "public-read"
+  upload_directory    = join("", [path.module, "/s3_dimension_station_name/"])
+  tags                = local.resource_tags
+}
 
 ```
 
